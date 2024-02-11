@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Number Generator</title>
+    <title>Name Randomizer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Random Number Generator</h1>
-    <p id="randomNumber">Random number: </p>
-    <button onclick="generateRandomNumber()">Generate Random Number</button>
+    <div class="container">
+        <h1>Name Randomizer</h1>
+        <p>Click the button below to generate a random name:</p>
+        <button id="generateButton">Generate Random Name</button>
+        <p id="randomName"></p>
+    </div>
 
-    <script>
-        function generateRandomNumber() {
-            // Generate a random number between 1 and 100
-            var randomNumber = Math.floor(Math.random() * 100) + 1;
-            document.getElementById("randomNumber").innerText = "Random number: " + randomNumber;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
